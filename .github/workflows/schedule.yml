@@ -1,0 +1,10 @@
+name: practise with scheduled jobs:
+on: 
+  schedule:
+    - cron: */5 * * * * 
+jobs:
+  cron-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: practise schedule trigger
+        run: echo "trigger job every 5 minutes"
